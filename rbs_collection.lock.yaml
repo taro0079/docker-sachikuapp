@@ -62,6 +62,14 @@ gems:
     revision: 6f9f54a753a78c505e63e7f31a48b3f71f1b510d
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
+- name: ast
+  version: '2.4'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 6f9f54a753a78c505e63e7f31a48b3f71f1b510d
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
 - name: digest
   version: '0'
   source:
@@ -78,8 +86,24 @@ gems:
   version: '0'
   source:
     type: stdlib
+- name: listen
+  version: '3.2'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 6f9f54a753a78c505e63e7f31a48b3f71f1b510d
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
 - name: nokogiri
   version: '1.11'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 6f9f54a753a78c505e63e7f31a48b3f71f1b510d
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: parallel
+  version: '1.20'
   source:
     type: git
     name: ruby/gem_rbs_collection
@@ -102,6 +126,18 @@ gems:
     revision: 6f9f54a753a78c505e63e7f31a48b3f71f1b510d
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
+- name: rainbow
+  version: '3.0'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 6f9f54a753a78c505e63e7f31a48b3f71f1b510d
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rbs_rails
+  version: 0.11.0
+  source:
+    type: rubygems
 - name: strscan
   version: '0'
   source:

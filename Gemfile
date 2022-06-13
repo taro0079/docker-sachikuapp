@@ -58,6 +58,8 @@ group :development do
   gem "web-console"
   gem "rbs_rails"
   gem "steep"
+  gem "solargraph"
+  gem "rubocop"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
