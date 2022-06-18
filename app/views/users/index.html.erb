@@ -3,25 +3,29 @@
     <h1>Users</h1>
   </div>
   <div>
-    <% @users.each do |user| %>
       <table>
         <thead>
           <tr>
+            <th>ID</th>
             <th>User name</th>
             <th>Age</th>
             <th>Email</th>
+            <th>Detail</th>
           </tr>
         </thead>
         <tbody>
+          <% @users.each do |user| %>
           <tr>
+            <td><%= user.id %></td>
             <td><%= user.name %></td>
             <td><%= user.age %></td>
             <td><%= user.email %></td>
+            <td><%= link_to "交通費", user_traveling_expenses_path(:target_user_id => user.id), class: 'btn-primary'%></td>
           </tr>
         </tbody>
 
+        <% end %>
       </table>
-    <% end %>
   </div>
   
 </div>

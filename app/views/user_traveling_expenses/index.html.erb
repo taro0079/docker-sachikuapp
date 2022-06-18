@@ -1,0 +1,36 @@
+<div class="flex flex-col">
+  <div class="mb-6">
+    <h1>交通費 一覧</h1>
+  </div>
+  <div>
+    <div class="flex mb-6 justify-end">
+      <button class="create-btn">新規作成</button>
+    </div>
+
+    <div class=" border rounded-xl p-4 shadow">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>合計 (円)</th>
+            <th>日付</th>
+            <th>user_id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @expenses.each do |expense| %>
+          <tr>
+            <td><%= expense.id %></td>
+            <td><%= expense.amount %></td>
+            <td><%= expense.day %></td>
+            <td><%= expense.user_id %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      
+      </table>
+      
+    </div>
+  </div>
+  
+</div>

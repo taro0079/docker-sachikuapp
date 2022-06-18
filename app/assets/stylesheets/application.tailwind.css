@@ -9,5 +9,23 @@
   @apply py-2 px-4 bg-blue-200 hover:bg-blue-400 rounded shadow;
 }
 h1 {
-  @apply font-bold text-4xl;
+  @apply font-bold text-4xl text-gray-600;
+}
+th {
+  @apply border-b py-2 px-4 bg-gray-100;
+}
+
+td {
+  @apply border-b px-4 py-2;
+}
+
+table {
+  @apply table-auto;
+}
+
+.create-btn {
+  @apply py-2 px-4 bg-green-200 hover:bg-green-400 rounded shadow;
+}
+.delete-btn {
+  @apply py-2 px-4 bg-red-200 hover:bg-red-400 rounded shadow;
 }
