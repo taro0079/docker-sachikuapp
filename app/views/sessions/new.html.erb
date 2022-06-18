@@ -1,0 +1,19 @@
+<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+  <div class="mb-6">
+    <h1>Log in</h1>
+  </div>
+  <%= form_for(:session, url: login_path) do |f| %>
+    <div class="mb-4">
+      <%= f.label :email, class: 'block mb-2 font-bold' %>
+      <%= f.email_field :email, class: 'rounded mb-3 shadow w-full border-gray-300 text-gray-800', placeholder: 'e-mail address' %>
+      
+    </div>
+    <div class="mb-6">
+      <%= f.label :password, class: 'block mb-2 font-bold'%>
+      <%= f.password_field :password, class: 'rounded mb-3 shadow w-full border-gray-300 text-gray-800', placeholder: 'password' %>
+      
+    </div>
+    <%= f.submit "Log in", class: 'btn btn-primary'%>
+  <% end %>
+
+</div>
