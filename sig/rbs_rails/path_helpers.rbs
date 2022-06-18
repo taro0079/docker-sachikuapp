@@ -3,6 +3,17 @@ interface _RbsRailsPathHelpers
   def rails_info_properties_path: (*untyped) -> String
   def rails_info_routes_path: (*untyped) -> String
   def rails_info_path: (*untyped) -> String
+  def login_path: (*untyped) -> String
+  def logout_path: (*untyped) -> String
+  def users_path: (*untyped) -> String
+  def new_user_path: (*untyped) -> String
+  def edit_user_path: (*untyped) -> String
+  def user_path: (*untyped) -> String
+  def traveling_expenses_path: (*untyped) -> String
+  def new_traveling_expense_path: (*untyped) -> String
+  def edit_traveling_expense_path: (*untyped) -> String
+  def traveling_expense_path: (*untyped) -> String
+  def user_traveling_expenses_path: (*untyped) -> String
   def turbo_recede_historical_location_path: (*untyped) -> String
   def turbo_resume_historical_location_path: (*untyped) -> String
   def turbo_refresh_historical_location_path: (*untyped) -> String
@@ -35,6 +46,17 @@ interface _RbsRailsPathHelpers
   def rails_info_properties_url: (*untyped) -> String
   def rails_info_routes_url: (*untyped) -> String
   def rails_info_url: (*untyped) -> String
+  def login_url: (*untyped) -> String
+  def logout_url: (*untyped) -> String
+  def users_url: (*untyped) -> String
+  def new_user_url: (*untyped) -> String
+  def edit_user_url: (*untyped) -> String
+  def user_url: (*untyped) -> String
+  def traveling_expenses_url: (*untyped) -> String
+  def new_traveling_expense_url: (*untyped) -> String
+  def edit_traveling_expense_url: (*untyped) -> String
+  def traveling_expense_url: (*untyped) -> String
+  def user_traveling_expenses_url: (*untyped) -> String
   def turbo_recede_historical_location_url: (*untyped) -> String
   def turbo_resume_historical_location_url: (*untyped) -> String
   def turbo_refresh_historical_location_url: (*untyped) -> String

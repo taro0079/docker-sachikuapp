@@ -6,6 +6,7 @@
       <table class='table-auto'>
         <thead>
           <tr>
+            <th> ID </th>
             <th>Amount</th>
             <th>day</th>
             <th>user_id</th>
@@ -14,15 +15,25 @@
         <tbody>
           <% @traveling_expense.each do |expense| %>
           <tr>
+            <td><%= expense.id  %></td>
             <td><%= expense.amount %></td>
             <td><%= expense.day %></td>
             <td><%= expense.user_id %></td>
           </tr>
           <% end %>
         </tbody>
-
       </table>
+    <table class="mt-6">
+      <tbody>
+      <tr>
+        <th>Sum</th>
+      </tr>
+      <tr>
+        <td><%= TravelingExpense.amount_all %></td>
+      </tr>
+      </tbody>
+    </table>
   </div>
-  
+
 </div>
 

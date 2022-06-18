@@ -110,6 +110,78 @@ class User < ::ApplicationRecord
 
     def clear_age_change: () -> void
 
+    def email: () -> String?
+
+    def email=: (String?) -> String?
+
+    def email?: () -> bool
+
+    def email_changed?: () -> bool
+
+    def email_change: () -> [ String?, String? ]
+
+    def email_will_change!: () -> void
+
+    def email_was: () -> String?
+
+    def email_previously_changed?: () -> bool
+
+    def email_previous_change: () -> Array[String?]?
+
+    def email_previously_was: () -> String?
+
+    def email_before_last_save: () -> String?
+
+    def email_change_to_be_saved: () -> Array[String?]?
+
+    def email_in_database: () -> String?
+
+    def saved_change_to_email: () -> Array[String?]?
+
+    def saved_change_to_email?: () -> bool
+
+    def will_save_change_to_email?: () -> bool
+
+    def restore_email!: () -> void
+
+    def clear_email_change: () -> void
+
+    def password_digest: () -> String?
+
+    def password_digest=: (String?) -> String?
+
+    def password_digest?: () -> bool
+
+    def password_digest_changed?: () -> bool
+
+    def password_digest_change: () -> [ String?, String? ]
+
+    def password_digest_will_change!: () -> void
+
+    def password_digest_was: () -> String?
+
+    def password_digest_previously_changed?: () -> bool
+
+    def password_digest_previous_change: () -> Array[String?]?
+
+    def password_digest_previously_was: () -> String?
+
+    def password_digest_before_last_save: () -> String?
+
+    def password_digest_change_to_be_saved: () -> Array[String?]?
+
+    def password_digest_in_database: () -> String?
+
+    def saved_change_to_password_digest: () -> Array[String?]?
+
+    def saved_change_to_password_digest?: () -> bool
+
+    def will_save_change_to_password_digest?: () -> bool
+
+    def restore_password_digest!: () -> void
+
+    def clear_password_digest_change: () -> void
+
     def created_at: () -> ActiveSupport::TimeWithZone
 
     def created_at=: (ActiveSupport::TimeWithZone) -> ActiveSupport::TimeWithZone
@@ -183,10 +255,26 @@ class User < ::ApplicationRecord
     def clear_updated_at_change: () -> void
   end
   include GeneratedAttributeMethods
+  def traveling_expenses: () -> TravelingExpense::ActiveRecord_Associations_CollectionProxy
+  def traveling_expenses=: (TravelingExpense::ActiveRecord_Associations_CollectionProxy | Array[TravelingExpense]) -> (TravelingExpense::ActiveRecord_Associations_CollectionProxy | Array[TravelingExpense])
+  def traveling_expense_ids: () -> Array[Integer]
+  def traveling_expense_ids=: (Array[Integer]) -> Array[Integer]
 
   module GeneratedAssociationMethods
   end
   include GeneratedAssociationMethods
+  module ActiveModel_SecurePassword_InstanceMethodsOnActivation_password
+    attr_reader password: String?
+
+    def password=: (String) -> String
+
+    def password_confirmation=: (String) -> String
+
+    def authenticate_password: (String) -> (User | false)
+
+    alias authenticate authenticate_password
+  end
+  include ActiveModel_SecurePassword_InstanceMethodsOnActivation_password
 
   module GeneratedRelationMethods
   end
