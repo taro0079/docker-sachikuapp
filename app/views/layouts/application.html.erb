@@ -15,8 +15,20 @@
     <% flash.each do |message_type, message| %>
       <%= message %>
     <% end %>
-    <main class="container mx-auto mt-28 px-5 flex justify-center">
-      <%= yield %>
+<!--    <main class="container mx-auto mt-28 px-5 justify-center w-full">-->
+    <main>
+      <nav class="bg-gray-800 w-full">
+        <div class="max-w-7xl mx-auto px-2">
+          <div class="relative flex items-center justify-between h-16">
+            <button type="button" class="rounded-md text-gray-400 hover:text-white hover:bg-gray-700">
+              <span>Home</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="flex justify-center items-center">
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'home#index'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
@@ -9,4 +10,6 @@ Rails.application.routes.draw do
   resources :users
   resources :traveling_expenses
   get 'user_traveling_expenses', action: :index, controller: 'user_traveling_expenses'
+  get 'user_traveling_expenses/new', action: :new, controller: 'user_traveling_expenses'
+
 end

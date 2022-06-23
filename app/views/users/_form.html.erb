@@ -1,0 +1,48 @@
+<%= form_with(model: @user) do |form| %>
+  <div class="flex justify-center items-center flex-col">
+    <div class="justify-self-start">
+      <div>
+        <%= form.label :name, class: 'font-bold' %>
+      </div>
+      <div class="mb-6">
+        <%= form.text_field :name, class: 'rounded-md border-gray-300'%>
+      </div>
+    </div>
+    <div class="justify-self-start">
+      <div>
+        <%= form.label :email, class: 'font-bold' %>
+      </div>
+      <div class="mb-6">
+        <%= form.email_field :email, class: 'rounded-md border-gray-300'%>
+      </div>
+    </div>
+    <div class="justify-self-start">
+      <div>
+        <%= form.label :age, class: 'font-bold' %>
+      </div>
+      <div class="mb-6">
+        <%= form.number_field :age, class: 'rounded-md border-gray-300' %>
+      </div>
+    </div>
+    <div class="justify-self-start">
+      <div>
+        <%= form.label :password, class: 'font-bold' %>
+      </div>
+      <div class="mb-6">
+        <%= form.password_field :password, class: 'rounded-md border-gray-300' %>
+      </div>
+    </div>
+    <div class="justify-self-start">
+      <div>
+        <%= form.label :password_confirmation, class: 'font-bold' %>
+      </div>
+      <div class="mb-6">
+        <%= form.password_field :password_confirmation, class: 'rounded-md border-gray-300' %>
+      </div>
+    </div>
+    <div>
+      <%= form.submit "Create", class: 'create-btn'%>
+    </div>
+
+  </div>
+<% end %>
