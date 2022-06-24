@@ -1,0 +1,5 @@
+class TravelingExpensesController < Rails::ApplicationController
+  @traveling_expense: ActiveRecord::Relation
+
+  def index: () -> void
+end

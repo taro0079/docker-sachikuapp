@@ -1,0 +1,7 @@
+class SessionsController < Rails::ApplicationController
+  def new: () -> void
+  
+  def create: () -> void
+  
+  
+end

@@ -1,0 +1,17 @@
+class UsersController < Rails::ApplicationController
+  @users: ActiveRecord::Relation
+  @user: User
+  def index: () -> void
+
+  def new: () -> void
+
+  def create: () -> void
+
+  def user_params: () -> {
+      name: String,
+      email: String,
+      age: Integer,
+      password: String,
+      password_confirmation: String
+    }
+end
